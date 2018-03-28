@@ -14,6 +14,45 @@ public class Carro {
     protected Banco banco[] = new Banco[3];
     protected Porta porta[] = new Porta[4];
     protected Tanque tanque;
+    protected float kilometragem;
+
+    public Carro(Motor motor, Roda[] roda, Pneu[] pneu, Banco[] banco, Porta[] porta, Tanque tanque){
+        this.motor = motor;
+        this.roda = roda;
+        this.pneu = pneu;
+        this.banco = banco;
+        this.porta = porta;
+        this.tanque = tanque;
+        this.kilometragem = 0;
+
+    }
+
+
+
+    public float faltaKmGasolina(){
+        return this.motor.getAutonomia() * this.tanque.getCapacidade();
+    }
+
+    public boolean andar(float km){
+        kilometragem += km;
+        for (int i = 0;i < 4;i++){
+            if(!this.pneu[i].percorrer(km)){
+                return false;
+            }
+            if(!this.tanque.queimar(km,this.motor.getAutonomia())){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public float getKilometragem() {
+        return kilometragem;
+    }
+
+    public void setKilometragem(float kilometragem) {
+        this.kilometragem = kilometragem;
+    }
 
     public Motor getMotor() {
         return motor;

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>fapi.poo.listacarro</OriginalElement>
+  <nodes>
+    <node x="330.40112227182533" y="77.5">fapi.poo.listacarro.porta.Porta</node>
+    <node x="1265.1474640376982" y="44.0">fapi.poo.listacarro.motor.Motor</node>
+    <node x="808.1372767857142" y="77.5">fapi.poo.listacarro.banco.Banco</node>
+    <node x="89.40112227182544" y="33.0">fapi.poo.listacarro.tanque.Tanque</node>
+    <node x="648.5901723710317" y="346.0">fapi.poo.listacarro.carro.Carro</node>
+    <node x="257.41674727182533" y="588.5">fapi.poo.listacarro.porta.FabricaPorta</node>
+    <node x="0.0" y="588.5">fapi.poo.listacarro.tanque.FabricaTanque</node>
+    <node x="1116.110714285714" y="588.5">fapi.poo.listacarro.pneu.FabricaPneu</node>
+    <node x="888.5693390376983" y="588.5">fapi.poo.listacarro.banco.FabricaBanco</node>
+    <node x="522.3872767857142" y="77.5">fapi.poo.listacarro.roda.Roda</node>
+    <node x="1313.110714285714" y="588.5">fapi.poo.listacarro.motor.FabricaMotor</node>
+    <node x="475.59017237103166" y="588.5">fapi.poo.listacarro.roda.FabricaRoda</node>
+    <node x="629.2654761904762" y="1032.0">fapi.poo.listacarro.carro.FabricaCarro</node>
+    <node x="996.8557973710317" y="0.0">fapi.poo.listacarro.pneu.Pneu</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.banco.FabricaBanco">
+      <point x="35.14583333333326" y="-25.5" />
+      <point x="784.9113095238095" y="932.0" />
+      <point x="1012.3193390376985" y="932.0" />
+      <point x="41.25000000000006" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.motor.Motor">
+      <point x="88.15625" y="-268.0" />
+      <point x="845.2464223710317" y="316.0" />
+      <point x="1285.3474640376983" y="316.0" />
+      <point x="-80.8" y="59.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.roda.FabricaRoda" target="fapi.poo.listacarro.roda.Roda">
+      <point x="-38.25" y="-25.5" />
+      <point x="513.8401723710317" y="326.0" />
+      <point x="576.3158482142856" y="326.0" />
+      <point x="-21.571428571428555" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.motor.Motor">
+      <point x="115.47916666666663" y="-25.5" />
+      <point x="865.2446428571427" y="1012.0" />
+      <point x="1512.610714285714" y="1012.0" />
+      <point x="1512.610714285714" y="316.0" />
+      <point x="1446.9474640376984" y="316.0" />
+      <point x="80.80000000000007" y="59.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.pneu.FabricaPneu">
+      <point x="75.3125" y="-25.5" />
+      <point x="825.0779761904762" y="972.0" />
+      <point x="1160.360714285714" y="972.0" />
+      <point x="-44.25" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.tanque.FabricaTanque">
+      <point x="-105.4375" y="-25.5" />
+      <point x="644.3279761904762" y="1002.0" />
+      <point x="152.25" y="1002.0" />
+      <point x="50.75" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.pneu.FabricaPneu" target="fapi.poo.listacarro.pneu.Pneu">
+      <point x="44.25" y="-25.5" />
+      <point x="1248.860714285714" y="306.0" />
+      <point x="1190.9272259424602" y="306.0" />
+      <point x="89.57142857142856" y="103.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.roda.Roda">
+      <point x="-35.14583333333337" y="-25.5" />
+      <point x="714.6196428571427" y="932.0" />
+      <point x="460.0539434523808" y="932.0" />
+      <point x="460.0539434523808" y="316.0" />
+      <point x="554.744419642857" y="316.0" />
+      <point x="-43.14285714285717" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.banco.FabricaBanco" target="fapi.poo.listacarro.banco.Banco">
+      <point x="-41.24999999999994" y="-25.5" />
+      <point x="929.8193390376985" y="276.0" />
+      <point x="905.2087053571427" y="276.0" />
+      <point x="21.571428571428555" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.pneu.Pneu">
+      <point x="61.03125" y="-268.0" />
+      <point x="818.1214223710317" y="296.0" />
+      <point x="1041.641511656746" y="296.0" />
+      <point x="-59.71428571428578" y="103.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.motor.FabricaMotor" target="fapi.poo.listacarro.motor.Motor">
+      <point x="47.25" y="-25.5" />
+      <point x="1454.860714285714" y="326.0" />
+      <point x="1406.5474640376983" y="326.0" />
+      <point x="40.400000000000034" y="59.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.tanque.Tanque">
+      <point x="-88.15625" y="-268.0" />
+      <point x="668.9339223710317" y="286.0" />
+      <point x="288.30112227182553" y="286.0" />
+      <point x="88.40000000000009" y="70.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.roda.FabricaRoda">
+      <point x="-15.0625" y="-25.5" />
+      <point x="734.7029761904762" y="912.0" />
+      <point x="590.3401723710317" y="912.0" />
+      <point x="38.25" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.banco.Banco">
+      <point x="45.1875" y="-25.5" />
+      <point x="794.9529761904762" y="942.0" />
+      <point x="1064.0693390376982" y="942.0" />
+      <point x="1064.0693390376982" y="256.0" />
+      <point x="948.3515624999998" y="256.0" />
+      <point x="64.71428571428567" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.banco.Banco">
+      <point x="6.78125" y="-268.0" />
+      <point x="763.8714223710317" y="256.0" />
+      <point x="818.9229910714284" y="256.0" />
+      <point x="-64.71428571428578" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.porta.FabricaPorta">
+      <point x="-75.3125" y="-25.5" />
+      <point x="674.4529761904762" y="972.0" />
+      <point x="296.16674727182533" y="972.0" />
+      <point x="-38.75" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.tanque.FabricaTanque" target="fapi.poo.listacarro.tanque.Tanque">
+      <point x="-50.75" y="-25.5" />
+      <point x="50.75" y="326.0" />
+      <point x="111.50112227182535" y="326.0" />
+      <point x="-88.40000000000009" y="70.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.porta.Porta">
+      <point x="-74.59375" y="-268.0" />
+      <point x="682.4964223710317" y="276.0" />
+      <point x="426.82969370039666" y="276.0" />
+      <point x="21.42857142857133" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.carro.Carro">
+      <point x="-5.020833333333371" y="-25.5" />
+      <point x="744.7446428571427" y="902.0" />
+      <point x="702.8401723710317" y="902.0" />
+      <point x="-54.25" y="268.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.porta.FabricaPorta" target="fapi.poo.listacarro.porta.Porta">
+      <point x="38.75" y="-25.5" />
+      <point x="373.66674727182533" y="326.0" />
+      <point x="383.972550843254" y="326.0" />
+      <point x="-21.42857142857133" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.porta.Porta">
+      <point x="-55.22916666666663" y="-25.5" />
+      <point x="694.5363095238095" y="952.0" />
+      <point x="432.645913938492" y="952.0" />
+      <point x="432.645913938492" y="326.0" />
+      <point x="405.40112227182533" y="326.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.pneu.Pneu">
+      <point x="55.22916666666663" y="-25.5" />
+      <point x="804.9946428571427" y="952.0" />
+      <point x="1095.5690476190475" y="952.0" />
+      <point x="1095.5690476190475" y="296.0" />
+      <point x="1101.3557973710317" y="296.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.roda.Roda">
+      <point x="-6.78125" y="-268.0" />
+      <point x="750.3089223710317" y="226.0" />
+      <point x="662.6015624999998" y="226.0" />
+      <point x="64.71428571428567" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.motor.FabricaMotor">
+      <point x="95.39583333333337" y="-25.5" />
+      <point x="845.1613095238095" y="992.0" />
+      <point x="1360.360714285714" y="992.0" />
+      <point x="-47.25" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.tanque.Tanque">
+      <point x="-95.39583333333326" y="-25.5" />
+      <point x="654.3696428571429" y="992.0" />
+      <point x="213.5" y="992.0" />
+      <point x="213.5" y="326.0" />
+      <point x="199.90112227182544" y="326.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="689.0000000000001" y="581.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

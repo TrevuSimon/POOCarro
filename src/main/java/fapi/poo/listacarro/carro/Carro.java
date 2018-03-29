@@ -1,11 +1,13 @@
 package fapi.poo.listacarro.carro;
 
 import fapi.poo.listacarro.banco.Banco;
+import fapi.poo.listacarro.bluetooth.Bluetooth;
 import fapi.poo.listacarro.motor.Motor;
 import fapi.poo.listacarro.pneu.Pneu;
 import fapi.poo.listacarro.porta.Porta;
 import fapi.poo.listacarro.roda.Roda;
 import fapi.poo.listacarro.tanque.Tanque;
+import fapi.poo.listacarro.tetosolar.TetoSolar;
 
 public class Carro {
     protected Motor motor;
@@ -15,6 +17,12 @@ public class Carro {
     protected Porta porta[] = new Porta[4];
     protected Tanque tanque;
     protected float kilometragem;
+    protected Roda stepRoda;
+    protected Pneu stepPneu;
+    protected Bluetooth bluetooth;
+    protected TetoSolar tetoSolar;
+
+
 
     public Carro(Motor motor, Roda[] roda, Pneu[] pneu, Banco[] banco, Porta[] porta, Tanque tanque){
         this.motor = motor;
@@ -24,13 +32,11 @@ public class Carro {
         this.porta = porta;
         this.tanque = tanque;
         this.kilometragem = 0;
-
     }
 
 
-
     public float faltaKmGasolina(){
-        return this.motor.getAutonomia() * this.tanque.getCapacidade();
+        return (this.motor.getAutonomia() * this.tanque.getCapacidade());
     }
 
     public boolean andar(float km){
@@ -44,14 +50,6 @@ public class Carro {
             }
         }
         return true;
-    }
-
-    public float getKilometragem() {
-        return kilometragem;
-    }
-
-    public void setKilometragem(float kilometragem) {
-        this.kilometragem = kilometragem;
     }
 
     public Motor getMotor() {
@@ -100,5 +98,45 @@ public class Carro {
 
     public void setTanque(Tanque tanque) {
         this.tanque = tanque;
+    }
+
+    public float getKilometragem() {
+        return kilometragem;
+    }
+
+    public void setKilometragem(float kilometragem) {
+        this.kilometragem = kilometragem;
+    }
+
+    public Roda getStepRoda() {
+        return stepRoda;
+    }
+
+    public void setStepRoda(Roda stepRoda) {
+        this.stepRoda = stepRoda;
+    }
+
+    public Pneu getStepPneu() {
+        return stepPneu;
+    }
+
+    public void setStepPneu(Pneu stepPneu) {
+        this.stepPneu = stepPneu;
+    }
+
+    public Bluetooth getBluetooth() {
+        return bluetooth;
+    }
+
+    public void setBluetooth(Bluetooth bluetooth) {
+        this.bluetooth = bluetooth;
+    }
+
+    public TetoSolar getTetoSolar() {
+        return tetoSolar;
+    }
+
+    public void setTetoSolar(TetoSolar tetoSolar) {
+        this.tetoSolar = tetoSolar;
     }
 }

@@ -2,6 +2,8 @@ package fapi.poo.listacarro.carro;
 
 import fapi.poo.listacarro.banco.Banco;
 import fapi.poo.listacarro.banco.FabricaBanco;
+import fapi.poo.listacarro.bluetooth.Bluetooth;
+import fapi.poo.listacarro.bluetooth.FabricaBluetooth;
 import fapi.poo.listacarro.motor.FabricaMotor;
 import fapi.poo.listacarro.motor.Motor;
 import fapi.poo.listacarro.pneu.FabricaPneu;
@@ -12,9 +14,11 @@ import fapi.poo.listacarro.roda.FabricaRoda;
 import fapi.poo.listacarro.roda.Roda;
 import fapi.poo.listacarro.tanque.FabricaTanque;
 import fapi.poo.listacarro.tanque.Tanque;
+import fapi.poo.listacarro.tetosolar.FabricaTetoSolar;
+import fapi.poo.listacarro.tetosolar.TetoSolar;
 
 public class FabricaCarro {
-    public Carro criaCarro(float litrosTanque, float autonomia, float durabilidadePneu){
+    public Carro criaCarro(float litrosTanque, float autonomia, float durabilidadePneu, String temStep, String temBluetooth, String temTetoSolar){
 
         FabricaBanco fabricaBanco = new FabricaBanco();
         FabricaMotor fabricaMotor = new FabricaMotor();
@@ -22,6 +26,8 @@ public class FabricaCarro {
         FabricaTanque fabricaTanque = new FabricaTanque();
         FabricaPorta fabricaPorta = new FabricaPorta();
         FabricaRoda fabricaRoda = new FabricaRoda();
+        FabricaBluetooth fabricaBluetooth = new FabricaBluetooth();
+        FabricaTetoSolar fabricaTetoSolar = new FabricaTetoSolar();
 
         //Banco
         Banco banco[] = new Banco[3];
@@ -58,6 +64,27 @@ public class FabricaCarro {
         roda[3] = fabricaRoda.criaRoda();
 
         Carro carro = new Carro(motor,roda,pneu,banco,porta,tanque);
+
+        //step
+        if(temStep == "S"){
+            Roda stepRoda = fabricaRoda.criaRoda();
+            Pneu stepPneu = fabricaPneu.criaPneu(durabilidadePneu);
+            carro.setStepPneu(stepPneu);
+            carro.setStepRoda(stepRoda);
+
+        }
+        //bluetooth
+        if(temBluetooth == "S" ){
+            Bluetooth bluetooth = fabricaBluetooth.criaBluetooth();
+            carro.setBluetooth(bluetooth);
+        }
+
+        //tetoSolar
+        if (temTetoSolar == "S")
+        {
+            TetoSolar tetoSolar = fabricaTetoSolar.criaTetoSolar();
+            carro.setTetoSolar(tetoSolar);
+        }
 
         return carro;
     }

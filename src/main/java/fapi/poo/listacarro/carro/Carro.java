@@ -34,22 +34,47 @@ public class Carro {
         this.kilometragem = 0;
     }
 
+    public void relatorioFimViagem(){
+        System.out.println("Você ainda tem "+this.tanque.getGasolinaTanque()+"L sobrando");
+        for (int i;i<4;i++){
+            System.out.println("Pneu["+i+"] tem ainda "+(this.pneu[i].getDurabilidade()-this.pneu[i].getPercorrido())+"km para andar!");
+        }
+    }
+
+    public boolean furarPneu(){
+        pneu[0] = null;
+        if(!(stepPneu == null)){
+            pneu[0] = stepPneu;
+            stepPneu = null;
+            System.out.println("Seu pneu furou mas você tinha um step e ja foi trocado!");
+            return true;
+        }
+        return false;
+    }
+
+    public void toggleConnectarBluetooth(){
+
+    }
+
+    public void toggleTetosolar(){
+        this.tetoSolar.toggleTetoSolar();
+    }
 
     public float faltaKmGasolina(){
         return (this.motor.getAutonomia() * this.tanque.getCapacidade());
     }
 
-    public boolean andar(float km){
+    public int andar(float km){
         kilometragem += km;
         for (int i = 0;i < 4;i++){
             if(!this.pneu[i].percorrer(km)){
-                return false;
-            }
-            if(!this.tanque.queimar(km,this.motor.getAutonomia())){
-                return false;
+                return 1;
             }
         }
-        return true;
+        if(!this.tanque.queimar(km,this.motor.getAutonomia())){
+            return 2;
+        }
+        return 0;
     }
 
     public Motor getMotor() {

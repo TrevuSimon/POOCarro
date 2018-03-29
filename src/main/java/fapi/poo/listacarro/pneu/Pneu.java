@@ -35,4 +35,12 @@ public class Pneu {
         furada = false;
         this.durabilidade = durabilidade;
     }
+
+    public float getPercorrido() {
+        return percorrido;
+    }
+
+    public void setPercorrido(float percorrido) {
+        this.percorrido = percorrido;
+    }
 }

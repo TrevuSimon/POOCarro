@@ -35,8 +35,9 @@ public class Carro {
     }
 
     public void relatorioFimViagem(){
+        System.out.println(" -  -  -  -  -");
         System.out.println("Você ainda tem "+this.tanque.getGasolinaTanque()+"L sobrando");
-        for (int i;i<4;i++){
+        for (int i = 0;i<4;i++){
             System.out.println("Pneu["+i+"] tem ainda "+(this.pneu[i].getDurabilidade()-this.pneu[i].getPercorrido())+"km para andar!");
         }
     }
@@ -53,7 +54,7 @@ public class Carro {
     }
 
     public void toggleConnectarBluetooth(){
-
+        this.bluetooth.toggleConnectarBluetooth();
     }
 
     public void toggleTetosolar(){
@@ -61,13 +62,16 @@ public class Carro {
     }
 
     public float faltaKmGasolina(){
-        return (this.motor.getAutonomia() * this.tanque.getCapacidade());
+        return (this.motor.getAutonomia() * this.tanque.getGasolinaTanque());
     }
 
     public int andar(float km){
         kilometragem += km;
         for (int i = 0;i < 4;i++){
             if(!this.pneu[i].percorrer(km)){
+                for (int y = i;y < 4;y++){
+
+                }
                 return 1;
             }
         }

@@ -3,187 +3,243 @@
   <ID>JAVA</ID>
   <OriginalElement>fapi.poo.listacarro</OriginalElement>
   <nodes>
-    <node x="330.40112227182533" y="77.5">fapi.poo.listacarro.porta.Porta</node>
-    <node x="1265.1474640376982" y="44.0">fapi.poo.listacarro.motor.Motor</node>
-    <node x="808.1372767857142" y="77.5">fapi.poo.listacarro.banco.Banco</node>
-    <node x="89.40112227182544" y="33.0">fapi.poo.listacarro.tanque.Tanque</node>
-    <node x="648.5901723710317" y="346.0">fapi.poo.listacarro.carro.Carro</node>
-    <node x="257.41674727182533" y="588.5">fapi.poo.listacarro.porta.FabricaPorta</node>
-    <node x="0.0" y="588.5">fapi.poo.listacarro.tanque.FabricaTanque</node>
-    <node x="1116.110714285714" y="588.5">fapi.poo.listacarro.pneu.FabricaPneu</node>
-    <node x="888.5693390376983" y="588.5">fapi.poo.listacarro.banco.FabricaBanco</node>
-    <node x="522.3872767857142" y="77.5">fapi.poo.listacarro.roda.Roda</node>
-    <node x="1313.110714285714" y="588.5">fapi.poo.listacarro.motor.FabricaMotor</node>
-    <node x="475.59017237103166" y="588.5">fapi.poo.listacarro.roda.FabricaRoda</node>
-    <node x="629.2654761904762" y="1032.0">fapi.poo.listacarro.carro.FabricaCarro</node>
-    <node x="996.8557973710317" y="0.0">fapi.poo.listacarro.pneu.Pneu</node>
+    <node x="1496.2357142857143" y="828.5">fapi.poo.listacarro.bluetooth.FabricaBluetooth</node>
+    <node x="749.4403571428575" y="99.5">fapi.poo.listacarro.porta.Porta</node>
+    <node x="47.113809523809664" y="77.0">fapi.poo.listacarro.tetosolar.TetoSolar</node>
+    <node x="1698.3694047619051" y="66.0">fapi.poo.listacarro.motor.Motor</node>
+    <node x="539.3638095238097" y="99.5">fapi.poo.listacarro.banco.Banco</node>
+    <node x="254.11380952380966" y="22.0">fapi.poo.listacarro.tanque.Tanque</node>
+    <node x="1434.3694047619051" y="77.0">fapi.poo.listacarro.bluetooth.Bluetooth</node>
+    <node x="835.0428571428571" y="410.0">fapi.poo.listacarro.carro.Carro</node>
+    <node x="659.0428571428572" y="828.5">fapi.poo.listacarro.porta.FabricaPorta</node>
+    <node x="1111.042857142857" y="828.5">fapi.poo.listacarro.pneu.FabricaPneu</node>
+    <node x="462.0428571428571" y="828.5">fapi.poo.listacarro.banco.FabricaBanco</node>
+    <node x="232.5" y="828.5">fapi.poo.listacarro.tanque.FabricaTanque</node>
+    <node x="1245.6194047619051" y="99.5">fapi.poo.listacarro.roda.Roda</node>
+    <node x="1309.042857142857" y="828.5">fapi.poo.listacarro.roda.FabricaRoda</node>
+    <node x="1739.5857142857142" y="828.5">fapi.poo.listacarro.motor.FabricaMotor</node>
+    <node x="10.5" y="828.5">fapi.poo.listacarro.tetosolar.FabricaTetoSolar</node>
+    <node x="781.042857142857" y="1478.0">fapi.poo.listacarro.carro.FabricaCarro</node>
+    <node x="989.2051190476193" y="0.0">fapi.poo.listacarro.pneu.Pneu</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="fapi.poo.listacarro.roda.FabricaRoda" target="fapi.poo.listacarro.roda.Roda">
+      <point x="38.25" y="-25.5" />
+      <point x="1423.792857142857" y="350.0" />
+      <point x="1364.262261904762" y="350.0" />
+      <point x="43.14285714285711" y="25.5" />
+    </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.banco.FabricaBanco">
-      <point x="35.14583333333326" y="-25.5" />
-      <point x="784.9113095238095" y="932.0" />
-      <point x="1012.3193390376985" y="932.0" />
-      <point x="41.25000000000006" y="25.5" />
+      <point x="-87.99999999999989" y="-25.5" />
+      <point x="869.0428571428572" y="1388.0" />
+      <point x="503.2928571428571" y="1388.0" />
+      <point x="-41.25" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.motor.Motor">
-      <point x="88.15625" y="-268.0" />
-      <point x="845.2464223710317" y="316.0" />
-      <point x="1285.3474640376983" y="316.0" />
-      <point x="-80.8" y="59.0" />
-    </edge>
-    <edge source="fapi.poo.listacarro.roda.FabricaRoda" target="fapi.poo.listacarro.roda.Roda">
-      <point x="-38.25" y="-25.5" />
-      <point x="513.8401723710317" y="326.0" />
-      <point x="576.3158482142856" y="326.0" />
-      <point x="-21.571428571428555" y="25.5" />
+      <point x="103.70000000000005" y="-444.0" />
+      <point x="1060.7428571428572" y="380.0" />
+      <point x="1718.569404761905" y="380.0" />
+      <point x="-80.79999999999995" y="59.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.motor.Motor">
-      <point x="115.47916666666663" y="-25.5" />
-      <point x="865.2446428571427" y="1012.0" />
-      <point x="1512.610714285714" y="1012.0" />
-      <point x="1512.610714285714" y="316.0" />
-      <point x="1446.9474640376984" y="316.0" />
-      <point x="80.80000000000007" y="59.0" />
+      <point x="170.1333333333332" y="-25.5" />
+      <point x="1127.1761904761902" y="1458.0" />
+      <point x="1939.0857142857142" y="1458.0" />
+      <point x="1939.0857142857142" y="380.0" />
+      <point x="1880.1694047619048" y="380.0" />
+      <point x="80.79999999999995" y="59.0" />
     </edge>
-    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.pneu.FabricaPneu">
-      <point x="75.3125" y="-25.5" />
-      <point x="825.0779761904762" y="972.0" />
-      <point x="1160.360714285714" y="972.0" />
-      <point x="-44.25" y="25.5" />
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.bluetooth.Bluetooth">
+      <point x="79.29999999999995" y="-444.0" />
+      <point x="1036.3428571428572" y="360.0" />
+      <point x="1458.769404761905" y="360.0" />
+      <point x="-97.6" y="48.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.tetosolar.TetoSolar">
+      <point x="-115.89999999999986" y="-444.0" />
+      <point x="841.1428571428572" y="360.0" />
+      <point x="178.01380952380975" y="360.0" />
+      <point x="37.40000000000009" y="48.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.tetosolar.TetoSolar">
+      <point x="-170.13333333333333" y="-25.5" />
+      <point x="786.9095238095238" y="1458.0" />
+      <point x="0.0" y="1458.0" />
+      <point x="0.0" y="380.0" />
+      <point x="65.81380952380971" y="380.0" />
+      <point x="-74.79999999999995" y="48.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.tanque.FabricaTanque">
-      <point x="-105.4375" y="-25.5" />
-      <point x="644.3279761904762" y="1002.0" />
-      <point x="152.25" y="1002.0" />
+      <point x="-111.46666666666658" y="-25.5" />
+      <point x="845.5761904761905" y="1408.0" />
+      <point x="384.75" y="1408.0" />
       <point x="50.75" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.pneu.FabricaPneu">
+      <point x="52.799999999999955" y="-25.5" />
+      <point x="1009.8428571428569" y="1358.0" />
+      <point x="1243.792857142857" y="1358.0" />
+      <point x="44.25" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.pneu.FabricaPneu" target="fapi.poo.listacarro.pneu.Pneu">
       <point x="44.25" y="-25.5" />
-      <point x="1248.860714285714" y="306.0" />
-      <point x="1190.9272259424602" y="306.0" />
-      <point x="89.57142857142856" y="103.0" />
+      <point x="1243.792857142857" y="310.0" />
+      <point x="1183.2765476190477" y="310.0" />
+      <point x="89.57142857142844" y="125.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.roda.Roda">
-      <point x="-35.14583333333337" y="-25.5" />
-      <point x="714.6196428571427" y="932.0" />
-      <point x="460.0539434523808" y="932.0" />
-      <point x="460.0539434523808" y="316.0" />
-      <point x="554.744419642857" y="316.0" />
-      <point x="-43.14285714285717" y="25.5" />
+      <point x="64.5333333333333" y="-25.5" />
+      <point x="1021.5761904761903" y="1368.0" />
+      <point x="1298.542857142857" y="1368.0" />
+      <point x="1298.542857142857" y="350.0" />
+      <point x="1321.1194047619051" y="350.0" />
+      <point x="0.0" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.banco.FabricaBanco" target="fapi.poo.listacarro.banco.Banco">
-      <point x="-41.24999999999994" y="-25.5" />
-      <point x="929.8193390376985" y="276.0" />
-      <point x="905.2087053571427" y="276.0" />
-      <point x="21.571428571428555" y="25.5" />
+      <point x="41.25" y="-25.5" />
+      <point x="585.7928571428571" y="390.0" />
+      <point x="593.2923809523811" y="390.0" />
+      <point x="-21.571428571428555" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.bluetooth.FabricaBluetooth">
+      <point x="123.20000000000005" y="-25.5" />
+      <point x="1080.242857142857" y="1418.0" />
+      <point x="1648.4857142857143" y="1418.0" />
+      <point x="50.75" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.pneu.Pneu">
-      <point x="61.03125" y="-268.0" />
-      <point x="818.1214223710317" y="296.0" />
-      <point x="1041.641511656746" y="296.0" />
-      <point x="-59.71428571428578" y="103.0" />
+      <point x="18.299999999999955" y="-444.0" />
+      <point x="975.342857142857" y="300.0" />
+      <point x="1033.9908333333335" y="300.0" />
+      <point x="-59.71428571428578" y="125.0" />
     </edge>
     <edge source="fapi.poo.listacarro.motor.FabricaMotor" target="fapi.poo.listacarro.motor.Motor">
-      <point x="47.25" y="-25.5" />
-      <point x="1454.860714285714" y="326.0" />
-      <point x="1406.5474640376983" y="326.0" />
-      <point x="40.400000000000034" y="59.0" />
+      <point x="-47.25" y="-25.5" />
+      <point x="1786.8357142857142" y="390.0" />
+      <point x="1799.3694047619051" y="390.0" />
+      <point x="0.0" y="59.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.tanque.Tanque">
-      <point x="-88.15625" y="-268.0" />
-      <point x="668.9339223710317" y="286.0" />
-      <point x="288.30112227182553" y="286.0" />
-      <point x="88.40000000000009" y="70.0" />
+      <point x="-91.49999999999989" y="-444.0" />
+      <point x="865.5428571428572" y="340.0" />
+      <point x="413.01380952380964" y="340.0" />
+      <point x="45.400000000000034" y="103.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.bluetooth.Bluetooth">
+      <point x="134.9333333333334" y="-25.5" />
+      <point x="1091.9761904761904" y="1428.0" />
+      <point x="1709.7357142857143" y="1428.0" />
+      <point x="1709.7357142857143" y="370.0" />
+      <point x="1653.969404761905" y="370.0" />
+      <point x="97.60000000000002" y="48.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.roda.FabricaRoda">
-      <point x="-15.0625" y="-25.5" />
-      <point x="734.7029761904762" y="912.0" />
-      <point x="590.3401723710317" y="912.0" />
-      <point x="38.25" y="25.5" />
+      <point x="76.26666666666665" y="-25.5" />
+      <point x="1033.3095238095236" y="1378.0" />
+      <point x="1347.292857142857" y="1378.0" />
+      <point x="-38.25" y="25.5" />
+    </edge>
+    <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.tetosolar.FabricaTetoSolar">
+      <point x="-146.66666666666663" y="-25.5" />
+      <point x="810.3761904761905" y="1438.0" />
+      <point x="159.75" y="1438.0" />
+      <point x="49.75" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.banco.Banco">
-      <point x="45.1875" y="-25.5" />
-      <point x="794.9529761904762" y="942.0" />
-      <point x="1064.0693390376982" y="942.0" />
-      <point x="1064.0693390376982" y="256.0" />
-      <point x="948.3515624999998" y="256.0" />
-      <point x="64.71428571428567" y="25.5" />
+      <point x="-64.53333333333319" y="-25.5" />
+      <point x="892.5095238095239" y="1368.0" />
+      <point x="637.5428571428572" y="1368.0" />
+      <point x="637.5428571428572" y="390.0" />
+      <point x="614.8638095238097" y="390.0" />
+      <point x="0.0" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.banco.Banco">
-      <point x="6.78125" y="-268.0" />
-      <point x="763.8714223710317" y="256.0" />
-      <point x="818.9229910714284" y="256.0" />
-      <point x="-64.71428571428578" y="25.5" />
+      <point x="-67.09999999999991" y="-444.0" />
+      <point x="889.9428571428572" y="320.0" />
+      <point x="636.4352380952382" y="320.0" />
+      <point x="21.571428571428555" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.porta.FabricaPorta">
-      <point x="-75.3125" y="-25.5" />
-      <point x="674.4529761904762" y="972.0" />
-      <point x="296.16674727182533" y="972.0" />
+      <point x="-41.066666666666606" y="-25.5" />
+      <point x="915.9761904761904" y="1348.0" />
+      <point x="697.7928571428572" y="1348.0" />
       <point x="-38.75" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.tanque.FabricaTanque" target="fapi.poo.listacarro.tanque.Tanque">
-      <point x="-50.75" y="-25.5" />
-      <point x="50.75" y="326.0" />
-      <point x="111.50112227182535" y="326.0" />
-      <point x="-88.40000000000009" y="70.0" />
+      <point x="50.75" y="-25.5" />
+      <point x="384.75" y="390.0" />
+      <point x="367.61380952380966" y="390.0" />
+      <point x="0.0" y="103.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.porta.Porta">
-      <point x="-74.59375" y="-268.0" />
-      <point x="682.4964223710317" y="276.0" />
-      <point x="426.82969370039666" y="276.0" />
-      <point x="21.42857142857133" y="25.5" />
+      <point x="-30.5" y="-444.0" />
+      <point x="926.5428571428571" y="290.0" />
+      <point x="845.868928571429" y="290.0" />
+      <point x="21.42857142857156" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.carro.Carro">
-      <point x="-5.020833333333371" y="-25.5" />
-      <point x="744.7446428571427" y="902.0" />
-      <point x="702.8401723710317" y="902.0" />
-      <point x="-54.25" y="268.0" />
+      <point x="5.866666666666674" y="-25.5" />
+      <point x="962.9095238095238" y="1318.0" />
+      <point x="1018.0428571428571" y="1318.0" />
+      <point x="61.0" y="444.0" />
     </edge>
     <edge source="fapi.poo.listacarro.porta.FabricaPorta" target="fapi.poo.listacarro.porta.Porta">
       <point x="38.75" y="-25.5" />
-      <point x="373.66674727182533" y="326.0" />
-      <point x="383.972550843254" y="326.0" />
+      <point x="775.2928571428572" y="390.0" />
+      <point x="803.0117857142861" y="390.0" />
       <point x="-21.42857142857133" y="25.5" />
     </edge>
+    <edge source="fapi.poo.listacarro.bluetooth.FabricaBluetooth" target="fapi.poo.listacarro.bluetooth.Bluetooth">
+      <point x="50.75" y="-25.5" />
+      <point x="1648.4857142857143" y="370.0" />
+      <point x="1605.169404761905" y="370.0" />
+      <point x="48.80000000000001" y="48.0" />
+    </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.porta.Porta">
-      <point x="-55.22916666666663" y="-25.5" />
-      <point x="694.5363095238095" y="952.0" />
-      <point x="432.645913938492" y="952.0" />
-      <point x="432.645913938492" y="326.0" />
-      <point x="405.40112227182533" y="326.0" />
-      <point x="0.0" y="25.5" />
+      <point x="-52.799999999999955" y="-25.5" />
+      <point x="904.242857142857" y="1358.0" />
+      <point x="648.5428571428572" y="1358.0" />
+      <point x="648.5428571428572" y="370.0" />
+      <point x="760.1546428571432" y="370.0" />
+      <point x="-64.28571428571422" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.pneu.Pneu">
-      <point x="55.22916666666663" y="-25.5" />
-      <point x="804.9946428571427" y="952.0" />
-      <point x="1095.5690476190475" y="952.0" />
-      <point x="1095.5690476190475" y="296.0" />
-      <point x="1101.3557973710317" y="296.0" />
-      <point x="0.0" y="103.0" />
+      <point x="29.333333333333258" y="-25.5" />
+      <point x="986.3761904761902" y="1338.0" />
+      <point x="1100.542857142857" y="1338.0" />
+      <point x="1100.542857142857" y="310.0" />
+      <point x="1123.5622619047622" y="310.0" />
+      <point x="29.85714285714289" y="125.0" />
+    </edge>
+    <edge source="fapi.poo.listacarro.tetosolar.FabricaTetoSolar" target="fapi.poo.listacarro.tetosolar.TetoSolar">
+      <point x="-49.75" y="-25.5" />
+      <point x="60.25" y="390.0" />
+      <point x="103.21380952380957" y="390.0" />
+      <point x="-37.40000000000009" y="48.0" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.Carro" target="fapi.poo.listacarro.roda.Roda">
-      <point x="-6.78125" y="-268.0" />
-      <point x="750.3089223710317" y="226.0" />
-      <point x="662.6015624999998" y="226.0" />
-      <point x="64.71428571428567" y="25.5" />
+      <point x="67.09999999999991" y="-444.0" />
+      <point x="1024.1428571428569" y="340.0" />
+      <point x="1299.5479761904764" y="340.0" />
+      <point x="-21.571428571428555" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.motor.FabricaMotor">
-      <point x="95.39583333333337" y="-25.5" />
-      <point x="845.1613095238095" y="992.0" />
-      <point x="1360.360714285714" y="992.0" />
+      <point x="146.66666666666674" y="-25.5" />
+      <point x="1103.7095238095237" y="1438.0" />
+      <point x="1786.8357142857142" y="1438.0" />
       <point x="-47.25" y="25.5" />
     </edge>
     <edge source="fapi.poo.listacarro.carro.FabricaCarro" target="fapi.poo.listacarro.tanque.Tanque">
-      <point x="-95.39583333333326" y="-25.5" />
-      <point x="654.3696428571429" y="992.0" />
-      <point x="213.5" y="992.0" />
-      <point x="213.5" y="326.0" />
-      <point x="199.90112227182544" y="326.0" />
-      <point x="0.0" y="70.0" />
+      <point x="-134.93333333333328" y="-25.5" />
+      <point x="822.1095238095238" y="1428.0" />
+      <point x="222.0" y="1428.0" />
+      <point x="222.0" y="390.0" />
+      <point x="276.8138095238096" y="390.0" />
+      <point x="-90.80000000000007" y="103.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="689.0000000000001" y="581.0" />
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="184.5" y="1071.666666666666" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>

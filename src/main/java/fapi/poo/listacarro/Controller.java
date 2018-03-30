@@ -106,6 +106,7 @@ public class Controller {
             }else if(carro.getKilometragem() == 400){
                 if(!carro.furarPneu()){
                     System.out.println("Sem step para trocar o pneu furado! sua viagem acaba aqui meu amigo.");
+                    break;
                 }
             }
         }

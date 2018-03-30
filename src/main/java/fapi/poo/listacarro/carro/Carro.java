@@ -43,7 +43,7 @@ public class Carro {
     }
 
     public boolean furarPneu(){
-        pneu[0] = null;
+        this.pneu[0].setFurada(true);
         if(!(stepPneu == null)){
             pneu[0] = stepPneu;
             stepPneu = null;
@@ -70,7 +70,7 @@ public class Carro {
         kilometragem += km;
         for (int i = 0;i < 4;i++){
             if(!this.pneu[i].percorrer(km)){
-                if(check == 0){check = 1}
+                if(check == 0){check = 1;}
             }
         }
         if(check == 1) return 1;

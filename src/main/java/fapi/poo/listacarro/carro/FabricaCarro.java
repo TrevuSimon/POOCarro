@@ -66,7 +66,7 @@ public class FabricaCarro {
         Carro carro = new Carro(motor,roda,pneu,banco,porta,tanque);
 
         //step
-        if(temStep == "S"){
+        if("S".equalsIgnoreCase(temStep)){
             Roda stepRoda = fabricaRoda.criaRoda();
             Pneu stepPneu = fabricaPneu.criaPneu(durabilidadePneu);
             carro.setStepPneu(stepPneu);
@@ -74,13 +74,13 @@ public class FabricaCarro {
 
         }
         //bluetooth
-        if(temBluetooth == "S" ){
+        if("S".equalsIgnoreCase(temBluetooth) ){
             Bluetooth bluetooth = fabricaBluetooth.criaBluetooth();
             carro.setBluetooth(bluetooth);
         }
 
         //tetoSolar
-        if (temTetoSolar == "S")
+        if ("S".equalsIgnoreCase(temTetoSolar))
         {
             TetoSolar tetoSolar = fabricaTetoSolar.criaTetoSolar();
             carro.setTetoSolar(tetoSolar);

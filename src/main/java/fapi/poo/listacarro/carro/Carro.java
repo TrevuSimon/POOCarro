@@ -66,15 +66,14 @@ public class Carro {
     }
 
     public int andar(float km){
+        int check = 0;
         kilometragem += km;
         for (int i = 0;i < 4;i++){
             if(!this.pneu[i].percorrer(km)){
-                for (int y = i;y < 4;y++){
-
-                }
-                return 1;
+                if(check == 0){check = 1}
             }
         }
+        if(check == 1) return 1;
         if(!this.tanque.queimar(km,this.motor.getAutonomia())){
             return 2;
         }

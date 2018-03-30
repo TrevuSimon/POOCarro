@@ -45,16 +45,9 @@ public class Controller {
 
 
         while(carro.getKilometragem() <= 500){
-            System.out.println("Seu carro ja rodou:"+carro.getKilometragem()+"km");
-            System.out.println("Com gasolina restante ele pode percorrer mais "+carro.faltaKmGasolina()+"km");
-
-            System.out.print("... Pressine qualquer tecla para andar + 10km...");
-            try {
-                System.in.read();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
+            System.out.println();
+            System.out.println("-  -  -  -  -  -  - ");
+            System.out.println();
             int check = carro.andar(10);
 
             if(check > 0){
@@ -68,6 +61,17 @@ public class Controller {
                     break;
                 }
             }
+
+            System.out.println("Seu carro ja rodou:"+carro.getKilometragem()+"km");
+            System.out.println("Com gasolina restante ele pode percorrer mais "+carro.faltaKmGasolina()+"km");
+
+            System.out.print("... Pressine qualquer tecla para andar + 10km...");
+            try {
+                System.in.read();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
 
             if(carro.getKilometragem() == 220){
                 if(carro.getTetoSolar() == null){
@@ -99,18 +103,11 @@ public class Controller {
                 }else{
                     carro.toggleConnectarBluetooth();
                 }
-            }else if(carro.getKilometragem() == 400{
+            }else if(carro.getKilometragem() == 400){
                 if(!carro.furarPneu()){
                     System.out.println("Sem step para trocar o pneu furado! sua viagem acaba aqui meu amigo.");
                 }
             }
-
-//            No Quilômetro 220 eu desejo abrir o teto solar. No Quilometro 240 eu desejo fechar o teto solar.
-//            No quilometro 350 eu desejo abrir o teto solar. No quilometro 390 eu desejo fechar o teto solar.
-//            No quilometro 370 eu desejo conectar meu celular ao Bluetooth do carro para fazer uma ligação.
-//                    No quilometro 400 um pneu furou, preciso trocar.
-//                    Ao final do trajeto eu gostaria de ser informado quantos litros de gasolina eu ainda possuo no tanque e
-//            quanto quilômetros eu ainda poderia percorrer com os meus pneus.
         }
         System.out.println("Fim da viagem!");
         carro.relatorioFimViagem();

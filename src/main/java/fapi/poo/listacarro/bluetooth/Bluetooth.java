@@ -5,7 +5,7 @@ public class Bluetooth {
     protected boolean conectado;
 
     public void toggleConnectarBluetooth(){
-        if(this.conectado){
+        if(!this.conectado){
             this.conectado = false;
             System.out.println("Celular conectado!");
         }else{
